@@ -8,28 +8,37 @@ public class ParkingSpotManager {
         this.spots = spots;
     }
 
-    ParkingSpot findParkingSpot() {
-        ParkingSpot s = new ParkingSpot();
-        return s;
-    }
-
+    
     void addParkingSpot(ParkingSpot sp) {
         spots.add(sp);
     }
-
+    
     void removeParkingSpot(ParkingSpot sp) {
         spots.remove(sp);
     }
+    
+    ParkingSpot findParkingSpot() {
+        ParkingSpot emptySpot = null;
 
-    void parkVehicle(Vehicle vh) {
-        ParkingSpot sp = findParkingSpot();
-        sp.parkVehicle(vh);
+        for(ParkingSpot s : spots) {
+            if(s.isEmpty) {
+                emptySpot = s;
+                break;
+            }
+        }
 
+        return emptySpot;
     }
 
-    Vehicle removeVehicle(ParkingSpot sp) {
-        Vehicle vh = new Vehicle();
-        return vh;
-    }
+    // void parkVehicle(Vehicle vh) {
+    //     ParkingSpot sp = findParkingSpot();
+    //     sp.parkVehicle(vh);
+
+    // }
+
+    // Vehicle removeVehicle(ParkingSpot sp) {
+    //     Vehicle vh = new Vehicle(0333, VehicleType.TWOWHEELER);
+    //     return vh;
+    // }
 
 }

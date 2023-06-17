@@ -2,10 +2,13 @@ public class ParkingSpot {
 
     Integer id;
     Boolean isEmpty;
+    ParkingSpotType spotType;
+    int price;
 
     Vehicle vehicle;
     
-    ParkingSpot() {
+    ParkingSpot(Integer id) {
+        this.id = id;
         this.isEmpty = true;
     }
     
