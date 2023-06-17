@@ -12,12 +12,14 @@ public class EntraceGate {
         return spot;
     }
     
-    void updateParkingSpot(Vehicle vh, ParkingSpot spot) {
-        manager.parkVehicle(vh, spot);
-    }
-
     Ticket generateTicket(Vehicle vh, ParkingSpot spot) {
         Ticket ticket = new Ticket(vh, spot);
         return ticket;
+    }
+    
+    void updateParkingSpot(Ticket ticket) {
+        Vehicle vh = ticket.vehicle;
+        ParkingSpot spot = ticket.spot;
+        manager.parkVehicle(vh, spot);
     }
 }

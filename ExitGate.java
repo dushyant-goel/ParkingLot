@@ -9,7 +9,7 @@ public class ExitGate {
         return costComputer.getPrice(ticket);
     }
 
-    void collectPayment() {
+    void collectPayment(Integer cost) {
         // cash, card, UPI
     }
 

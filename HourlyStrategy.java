@@ -17,7 +17,7 @@ public class HourlyStrategy extends PricingStrategy{
         Duration duration = Duration.between(entryTime, exitTime);
         long hours = duration.toHours();
 
-        return Integer.valueOf((int) hours);
+        return Integer.valueOf((int) hours) + 1;
     }
 
     private LocalDateTime convertToDateTime(long unix_ts) {
