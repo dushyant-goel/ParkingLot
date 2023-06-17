@@ -1,7 +1,7 @@
 package src.com.parkinglot.parkingspot;
 public class FourWheelerSpot extends ParkingSpot{
 
-    FourWheelerSpot(Integer id) {
+    public FourWheelerSpot(Integer id) {
         super(id);
         this.spotType = ParkingSpotType.FOURWHEELER;
         this.price = 45;

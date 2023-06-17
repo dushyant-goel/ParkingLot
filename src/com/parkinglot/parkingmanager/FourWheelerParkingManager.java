@@ -3,15 +3,16 @@ package src.com.parkinglot.parkingmanager;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import src.com.parkinglot.parkingspot.TwoWheelerSpot;
+import src.com.parkinglot.parkingspot.FourWheelerSpot;
+import src.com.parkinglot.parkingspot.FourWheelerSpot;
 
 public class FourWheelerParkingManager extends ParkingSpotManager {
 
     FourWheelerParkingManager() {
         spots = new ArrayList<>(Arrays.asList(
-                new TwoWheelerSpot(1),
-                new TwoWheelerSpot(2),
-                new TwoWheelerSpot(3)
+                new FourWheelerSpot(1),
+                new FourWheelerSpot(2),
+                new FourWheelerSpot(3)
         ));
     }
     

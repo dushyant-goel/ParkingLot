@@ -14,10 +14,11 @@ public class ParkingSpotManagerFactory {
         switch(vh.vehicleType) {
             case TWOWHEELER:
                 manager = new TwoWheelerParkingManager();
+                break;
             case FOURWHEELER:
-                manager = new FourWheelerParkingManager();
             default:
                 manager = new FourWheelerParkingManager();
+                break;
         }
 
         return manager;

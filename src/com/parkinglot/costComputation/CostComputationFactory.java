@@ -20,6 +20,7 @@ public class CostComputationFactory {
             case FOURWHEELER:
             default:
                 costComputer = new FourWheelerCostComputation();
+                break;
         }
 
         return costComputer;
