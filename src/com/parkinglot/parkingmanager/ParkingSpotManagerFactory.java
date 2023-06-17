@@ -6,14 +6,20 @@ public class ParkingSpotManagerFactory {
     
     ParkingSpotManager manager;
 
+    public ParkingSpotManagerFactory() {
+        manager = new ParkingSpotManager(null);
+    }
+
     public ParkingSpotManager getManager(Vehicle vh) {
         switch(vh.vehicleType) {
             case TWOWHEELER:
-                return new TwoWheelerParkingManager();
+                manager = new TwoWheelerParkingManager();
             case FOURWHEELER:
-                return new FourWheelerParkingManager();
+                manager = new FourWheelerParkingManager();
             default:
-                return new FourWheelerParkingManager();
+                manager = new FourWheelerParkingManager();
         }
+
+        return manager;
     }
 }

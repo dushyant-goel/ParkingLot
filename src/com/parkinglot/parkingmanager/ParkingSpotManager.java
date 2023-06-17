@@ -11,7 +11,7 @@ public class ParkingSpotManager {
     List<ParkingSpot> spots;
 
     ParkingSpotManager() {
-        spots = new ArrayList<>(null);
+        spots = new ArrayList<>();
     }
 
     ParkingSpotManager(List<ParkingSpot> spots) {
