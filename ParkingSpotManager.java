@@ -1,14 +1,18 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class ParkingSpotManager {
     
     List<ParkingSpot> spots;
 
+    ParkingSpotManager() {
+        spots = new ArrayList<>(null);
+    }
+
     ParkingSpotManager(List<ParkingSpot> spots) {
         this.spots = spots;
     }
 
-    
     void addParkingSpot(ParkingSpot sp) {
         spots.add(sp);
     }
@@ -30,15 +34,12 @@ public class ParkingSpotManager {
         return emptySpot;
     }
 
-    // void parkVehicle(Vehicle vh) {
-    //     ParkingSpot sp = findParkingSpot();
-    //     sp.parkVehicle(vh);
+    void parkVehicle(Vehicle vh, ParkingSpot sp) {
+        sp.parkVehicle(vh);
+    }
 
-    // }
-
-    // Vehicle removeVehicle(ParkingSpot sp) {
-    //     Vehicle vh = new Vehicle(0333, VehicleType.TWOWHEELER);
-    //     return vh;
-    // }
+    void unparkVehicle(ParkingSpot sp) {
+        sp.unparkVehicle();
+    }
 
 }
