@@ -1,3 +1,7 @@
+package src.com.parkinglot.ticket;
+import src.com.parkinglot.parkingspot.ParkingSpot;
+import src.com.parkinglot.vehicle.Vehicle;
+
 public class Ticket {
    
    long entryTime;

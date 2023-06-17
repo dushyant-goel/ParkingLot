@@ -1,3 +1,7 @@
+package src.com.parkinglot.costComputation;
+import src.com.parkinglot.ticket.Ticket;
+import src.com.parkinglot.vehicle.Vehicle;
+
 public class CostComputationFactory {
     CostComputation costComputer;
 

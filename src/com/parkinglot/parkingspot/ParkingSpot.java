@@ -1,3 +1,6 @@
+import src.com.parkinglot.vehicle.Vehicle;
+
+package src.com.parkinglot.parkingspot;
 public class ParkingSpot {
 
     Integer id;

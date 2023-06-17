@@ -1,5 +1,9 @@
+package src.com.parkinglot.parkingmanager;
 import java.util.ArrayList;
 import java.util.List;
+
+import src.com.parkinglot.parkingspot.ParkingSpot;
+import src.com.parkinglot.vehicle.Vehicle;
 
 public class ParkingSpotManager {
     

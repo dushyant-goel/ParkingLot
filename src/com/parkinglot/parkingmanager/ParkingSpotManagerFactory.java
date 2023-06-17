@@ -1,3 +1,6 @@
+package src.com.parkinglot.parkingmanager;
+import src.com.parkinglot.vehicle.Vehicle;
+
 public class ParkingSpotManagerFactory {
     
     ParkingSpotManager manager;

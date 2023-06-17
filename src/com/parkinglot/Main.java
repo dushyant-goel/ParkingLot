@@ -1,5 +1,14 @@
+package src.com.parkinglot;
 import java.util.ArrayList;
 import java.util.List;
+
+import EntraceGate;
+import ExitGate;
+import ParkingSpot;
+import Ticket;
+import Vehicle;
+import VehicleType;
+
 import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {

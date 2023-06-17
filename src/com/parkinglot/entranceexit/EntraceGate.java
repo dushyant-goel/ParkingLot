@@ -1,3 +1,10 @@
+import src.com.parkinglot.parkingspot.ParkingSpot;
+import src.com.parkinglot.parkingspot.ParkingSpotManager;
+import src.com.parkinglot.parkingspot.ParkingSpotManagerFactory;
+import src.com.parkinglot.ticket.Ticket;
+import src.com.parkinglot.vehicle.Vehicle;
+
+package src.com.parkinglot.entranceexit;
 public class EntraceGate {
     
     ParkingSpotManager manager;

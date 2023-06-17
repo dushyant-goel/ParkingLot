@@ -1,3 +1,6 @@
+import src.com.parkinglot.ticket.Ticket;
+
+package src.com.parkinglot.costComputation;
 public class CostComputation {
 
     public PricingStrategy calculator;

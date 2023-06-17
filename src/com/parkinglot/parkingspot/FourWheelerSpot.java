@@ -1,3 +1,4 @@
+package src.com.parkinglot.parkingspot;
 public class FourWheelerSpot extends ParkingSpot{
 
     FourWheelerSpot(Integer id) {

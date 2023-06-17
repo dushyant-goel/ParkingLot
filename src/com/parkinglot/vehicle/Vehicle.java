@@ -1,3 +1,6 @@
+import src.com.parkinglot.ticket.Ticket;
+
+package src.com.parkinglot.vehicle;
 public class Vehicle {
 
     Integer vehicleNum;

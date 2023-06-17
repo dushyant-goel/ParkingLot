@@ -1,5 +1,8 @@
+package src.com.parkinglot.parkingmanager;
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import src.com.parkinglot.parkingspot.TwoWheelerSpot;
 
 public class TwoWheelerParkingManager extends ParkingSpotManager {
 
