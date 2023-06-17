@@ -34,12 +34,16 @@ __EXIT__
 
 Vehicle provide the `Ticket` to the `ExitGate`.
 
-Exit Gate creates a `CostCompution` from the factory, based on the `VehicleType` on the `Ticket`. (`TwoWheelerCostCompution`, `FourWheelerCostCompution`)
+ExitGate creates a `CostCompution` from the factory, based on the `VehicleType` on the `Ticket`. (`TwoWheelerCostCompution`, `FourWheelerCostCompution`)
 
 `CostComputation` utilizes one of two strategies, (`HourlyStrategy`, `DailyPassStrategy`) to calculate cost. (Strategy Pattern).
 
 ---
 
+Further Work : 
+- Add a `ParkingLot` class to encapsulate everything, especially the ParkingSpots.
+- Make it interactive.
+- Add floors, implement parking strategies (put `List<ParkingSpots>` in heap).
 
 
 
