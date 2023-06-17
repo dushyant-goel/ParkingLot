@@ -1,12 +1,13 @@
+package src.com.parkinglot.parkingspot;
+
 import src.com.parkinglot.vehicle.Vehicle;
 
-package src.com.parkinglot.parkingspot;
 public class ParkingSpot {
 
     Integer id;
-    Boolean isEmpty;
     ParkingSpotType spotType;
-    int price;
+    public Boolean isEmpty;
+    public int price;
 
     Vehicle vehicle;
     

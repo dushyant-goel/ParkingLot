@@ -1,13 +1,13 @@
-package src.com.parkinglot;
+package src;
 import java.util.ArrayList;
 import java.util.List;
 
-import EntraceGate;
-import ExitGate;
-import ParkingSpot;
-import Ticket;
-import Vehicle;
-import VehicleType;
+import src.com.parkinglot.entranceexit.EntraceGate;
+import src.com.parkinglot.entranceexit.ExitGate;
+import src.com.parkinglot.parkingspot.ParkingSpot;
+import src.com.parkinglot.ticket.Ticket;
+import src.com.parkinglot.vehicle.Vehicle;
+import src.com.parkinglot.vehicle.VehicleType;
 
 import java.util.Arrays;
 public class Main {

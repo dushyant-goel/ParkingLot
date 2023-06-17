@@ -1,10 +1,11 @@
+package src.com.parkinglot.vehicle;
+
 import src.com.parkinglot.ticket.Ticket;
 
-package src.com.parkinglot.vehicle;
 public class Vehicle {
 
     Integer vehicleNum;
-    VehicleType vehicleType;
+    public VehicleType vehicleType;
 
     Ticket ticket;
     

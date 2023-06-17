@@ -1,4 +1,5 @@
 package src.com.parkinglot.pricingstrategy;
+
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -9,7 +10,7 @@ import src.com.parkinglot.ticket.Ticket;
 public class HourlyStrategy extends PricingStrategy{
 
     @Override
-    Integer price(Ticket ticket) {
+    public Integer price(Ticket ticket) {
         
         long entryTimeUnix = ticket.entryTime;
         long exitTimeUnix = System.currentTimeMillis();

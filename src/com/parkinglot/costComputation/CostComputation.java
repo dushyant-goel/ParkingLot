@@ -1,6 +1,9 @@
-import src.com.parkinglot.ticket.Ticket;
+package src.com.parkinglot.costcomputation;
 
-package src.com.parkinglot.costComputation;
+import src.com.parkinglot.ticket.Ticket;
+import src.com.parkinglot.pricingstrategy.PricingStrategy;
+;
+
 public class CostComputation {
 
     public PricingStrategy calculator;
@@ -9,7 +12,7 @@ public class CostComputation {
        this.calculator = calc;
     }
 
-    Integer getPrice(Ticket ticket) {
+    public Integer getPrice(Ticket ticket) {
         return calculator.price(ticket);
     }
 }

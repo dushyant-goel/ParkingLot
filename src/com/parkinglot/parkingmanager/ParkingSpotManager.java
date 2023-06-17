@@ -1,4 +1,5 @@
 package src.com.parkinglot.parkingmanager;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class ParkingSpotManager {
         spots.remove(sp);
     }
     
-    ParkingSpot findParkingSpot() {
+    public ParkingSpot findParkingSpot() {
         ParkingSpot emptySpot = null;
 
         for(ParkingSpot s : spots) {
@@ -38,11 +39,11 @@ public class ParkingSpotManager {
         return emptySpot;
     }
 
-    void parkVehicle(Vehicle vh, ParkingSpot sp) {
+    public void parkVehicle(Vehicle vh, ParkingSpot sp) {
         sp.parkVehicle(vh);
     }
 
-    void unparkVehicle(ParkingSpot sp) {
+    public void unparkVehicle(ParkingSpot sp) {
         sp.unparkVehicle();
     }
 

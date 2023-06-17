@@ -1,11 +1,12 @@
-package src.com.parkinglot.costComputation;
+package src.com.parkinglot.costcomputation;
+
 import src.com.parkinglot.ticket.Ticket;
 import src.com.parkinglot.vehicle.Vehicle;
 
 public class CostComputationFactory {
     CostComputation costComputer;
 
-    CostComputationFactory() {
+    public CostComputationFactory() {
         costComputer = null;
     }
 
