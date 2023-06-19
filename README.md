@@ -5,7 +5,9 @@ Parking Lot : Implementing design patterns.
 ### Factory Pattern :
 - CostComputation
 - ParkingManager
-- ParkingSpot*
+
+`ParkingManager<T extends ParkingSpot>` is a templated class
+since it's children, `TwoWheelerManager` and `FourWheelerManager` only handle particlur extension of `ParkingSpots`, `TwoWheelerSpot` and `FourWheelerSpot` respectively.
 
 ### Strategy Pattern :
 - PricingStrategy
@@ -41,7 +43,8 @@ ExitGate creates a `CostCompution` from the factory, based on the `VehicleType` 
 ---
 
 Further Work : 
-- Add a `ParkingLot` class to encapsulate everything, especially the ParkingSpots.
+
+- ~~Add a `ParkingLot` class to encapsulate everything, especially the ParkingSpots.~~
 - Make it interactive.
 - Add floors, implement parking strategies (put `List<ParkingSpots>` in heap).
 

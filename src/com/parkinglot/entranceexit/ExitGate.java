@@ -36,9 +36,9 @@ public class ExitGate {
     }
 
     public void updateParkingSpot(Ticket ticket) {
-        // Vehicle vh = ticket.vehicle;
+        Vehicle vh = ticket.vehicle;
         ParkingSpot spot = ticket.spot;
-        
+        manager = ParkingManagerFactory.getManager(vh, parkingSpots);
         manager.unparkVehicle(spot);
     }
 }

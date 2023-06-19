@@ -2,6 +2,7 @@ package src;
 
 import src.com.parkinglot.entranceexit.EntraceGate;
 import src.com.parkinglot.entranceexit.ExitGate;
+import src.com.parkinglot.parkinglot.ParkingLot;
 import src.com.parkinglot.parkingspot.ParkingSpot;
 import src.com.parkinglot.ticket.Ticket;
 import src.com.parkinglot.vehicle.Vehicle;
@@ -16,9 +17,10 @@ public class Main {
          * 3 x TwoWheelerSpots
          */
 
-       // EntranceGate 
-        EntraceGate entrance = new EntraceGate();
-        ExitGate exit = new ExitGate();
+       // ParkingLot
+        ParkingLot parkingLot = new ParkingLot();
+        EntraceGate entrance = parkingLot.entrace;
+        ExitGate exit = parkingLot.exit;
 
         // Vehicles
         Vehicle car1 = new Vehicle(9211, VehicleType.FOURWHEELER);
@@ -48,22 +50,27 @@ public class Main {
         
         //1
         ps = entrance.findParkingSpot(car1);
+        System.out.println(ps.id);
         Ticket ticket1 = entrance.generateTicket(car1, ps);
         entrance.updateParkingSpot(ticket1);
         //2
         ps = entrance.findParkingSpot(car2);
+        System.out.println(ps.id);
         Ticket ticket2 = entrance.generateTicket(car2, ps);
         entrance.updateParkingSpot(ticket2);
         //3
         ps = entrance.findParkingSpot(bike1);
+        System.out.println(ps.id);
         Ticket ticket3 = entrance.generateTicket(bike1, ps);
         entrance.updateParkingSpot(ticket3);
         //4
         ps = entrance.findParkingSpot(car3);
+        System.out.println(ps.id);
         Ticket ticket4 = entrance.generateTicket(car3, ps);
         entrance.updateParkingSpot(ticket4);
         //5
         ps = entrance.findParkingSpot(car4);
+        System.out.println("null");
         // Ticket ticket5 = entrance.generateTicket(car4, ps5);
         // entrance.updateParkingSpot(ticket5);
         // 6
@@ -72,6 +79,7 @@ public class Main {
         exit.updateParkingSpot(ticket2);
         // 7
         ps = entrance.findParkingSpot(car5);
+        System.out.println(ps.id);
         Ticket ticket5 = entrance.generateTicket(car5, ps);
         entrance.updateParkingSpot(ticket5);
         // 8
@@ -88,10 +96,12 @@ public class Main {
         exit.updateParkingSpot(ticket4);
         // 11
         ps = entrance.findParkingSpot(car4);
+        System.out.println(ps.id);
         Ticket ticket6 = entrance.generateTicket(car4, ps);
         entrance.updateParkingSpot(ticket6);
         // 12
         ps = entrance.findParkingSpot(bike1);
+        System.out.println(ps.id);
         Ticket ticket7 = entrance.generateTicket(bike1, ps);
         entrance.updateParkingSpot(ticket7);
 
