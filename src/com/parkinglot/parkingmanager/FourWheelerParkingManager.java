@@ -6,7 +6,7 @@ import java.util.Arrays;
 import src.com.parkinglot.parkingspot.FourWheelerSpot;
 import src.com.parkinglot.parkingspot.FourWheelerSpot;
 
-public class FourWheelerParkingManager extends ParkingSpotManager {
+public class FourWheelerParkingManager extends ParkingManager {
 
     FourWheelerParkingManager() {
         spots = new ArrayList<>(Arrays.asList(

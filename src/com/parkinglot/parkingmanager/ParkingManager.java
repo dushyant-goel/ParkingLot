@@ -6,15 +6,15 @@ import java.util.List;
 import src.com.parkinglot.parkingspot.ParkingSpot;
 import src.com.parkinglot.vehicle.Vehicle;
 
-public class ParkingSpotManager {
+public abstract class ParkingManager {
     
-    List<ParkingSpot> spots;
+    protected List<ParkingSpot> spots;
 
-    ParkingSpotManager() {
+    ParkingManager() {
         spots = new ArrayList<>();
     }
 
-    ParkingSpotManager(List<ParkingSpot> spots) {
+    ParkingManager(List<ParkingSpot> spots) {
         this.spots = spots;
     }
 

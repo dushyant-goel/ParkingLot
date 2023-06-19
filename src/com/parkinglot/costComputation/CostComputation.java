@@ -4,7 +4,7 @@ import src.com.parkinglot.ticket.Ticket;
 import src.com.parkinglot.pricingstrategy.PricingStrategy;
 ;
 
-public class CostComputation {
+public abstract class CostComputation {
 
     public PricingStrategy calculator;
 

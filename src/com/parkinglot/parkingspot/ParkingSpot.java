@@ -2,7 +2,7 @@ package src.com.parkinglot.parkingspot;
 
 import src.com.parkinglot.vehicle.Vehicle;
 
-public class ParkingSpot {
+public abstract class ParkingSpot {
 
     Integer id;
     ParkingSpotType spotType;
