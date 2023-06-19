@@ -6,30 +6,30 @@ import java.util.List;
 import src.com.parkinglot.parkingspot.ParkingSpot;
 import src.com.parkinglot.vehicle.Vehicle;
 
-public abstract class ParkingManager {
+public abstract class ParkingManager<T extends ParkingSpot> {
     
-    protected List<ParkingSpot> spots;
+    protected List<T> parkingSpots;
 
     ParkingManager() {
-        spots = new ArrayList<>();
+        parkingSpots = new ArrayList<>();
     }
 
-    ParkingManager(List<ParkingSpot> spots) {
-        this.spots = spots;
+    ParkingManager(List<T> spots) {
+        this.parkingSpots = spots;
     }
 
-    void addParkingSpot(ParkingSpot sp) {
-        spots.add(sp);
+    void addParkingSpot(T sp) {
+        parkingSpots.add(sp);
     }
     
-    void removeParkingSpot(ParkingSpot sp) {
-        spots.remove(sp);
+    void removeParkingSpot(T sp) {
+        parkingSpots.remove(sp);
     }
     
     public ParkingSpot findParkingSpot() {
         ParkingSpot emptySpot = null;
 
-        for(ParkingSpot s : spots) {
+        for(ParkingSpot s : parkingSpots) {
             if(s.isEmpty) {
                 emptySpot = s;
                 break;

@@ -1,6 +1,4 @@
 package src;
-import java.util.ArrayList;
-import java.util.List;
 
 import src.com.parkinglot.entranceexit.EntraceGate;
 import src.com.parkinglot.entranceexit.ExitGate;
@@ -9,7 +7,6 @@ import src.com.parkinglot.ticket.Ticket;
 import src.com.parkinglot.vehicle.Vehicle;
 import src.com.parkinglot.vehicle.VehicleType;
 
-import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         

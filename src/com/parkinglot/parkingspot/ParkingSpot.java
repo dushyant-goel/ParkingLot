@@ -5,7 +5,7 @@ import src.com.parkinglot.vehicle.Vehicle;
 public abstract class ParkingSpot {
 
     Integer id;
-    ParkingSpotType spotType;
+    public ParkingSpotType spotType;
     public Boolean isEmpty;
     public int price;
 
